@@ -1,0 +1,30 @@
+.katrori {
+    width: 200px;
+    height: 200px;
+    border: 5px 3px 2px;
+    box-shadow: 5px 5px 5px red;
+    background-color: #3498db;
+}
+
+.katrori:hover {
+    box-shadow: 5px 5px 5px blue;
+
+}
+
+@media (min-width: 1200px) {
+    .katrori {
+        box-shadow: 5px 5px 5px gray;
+    }
+}
+
+@media (max-width: 1000px) {
+    .katrori {
+        box-shadow: 5px 5px 5px yellow;
+    }
+}
+
+@media (max-width: 1200px) {
+    .katrori {
+        box-shadow: 5px 5px 5px red;
+    }
+}
