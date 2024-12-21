@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-rows: 30%;
+    gap: 10px;
+    column-gap: 10px;
+    grid-template-areas:
+        ".slider"
+        ".lajmet"
+        ".lajmiKryesor";
+}
+
+.slider {
+    grid-area: slider;
+    background-color: red;
+}
+
+.lajmet {
+    grid-area: lajmet;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: violet;
+}
+
+.lajmi1 {
+    gap: 10px;
+    grid-column: 1;
+    background-color: forestgreen;
+}
+
+.lajmi2 {
+    grid-column: 2;
+
+    background-color: yellow;
+}
+
+.lajmi3 {
+    grid-column: 3;
+
+    background-color: navajowhite;
+}
+
+.lajmi4 {
+    grid-column: 4;
+    background-color: gainsboro;
+}
+
+.lajmiKryesor {
+    grid-area: lajmiKryesor;
+    background-color: rebeccapurple;
+}
