@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formë për Makinen</title>
+    <link rel="stylesheet" href="/components/makina/makina.css">
+    <script src="/components/makina/makina.js" defer></script>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Formë për Makinen</h2>
+        <form id="makinaForm">
+            <label for="emri">Emri i Makines:</label>
+            <input type="text" id="emri" name="emri" required>
+
+            <label for="lloji">Lloji i Makines:</label>
+            <input type="text" id="lloji" name="lloji" required>
+
+            <label for="cmimi">Çmimi:</label>
+            <input type="number" id="cmimi" name="cmimi" required>
+
+            <label for="viti">Viti i Prodhimit:</label>
+            <input type="number" id="viti" name="viti" min="1900" max="2099" required>
+
+            <label for="motori">Motori:</label>
+            <select id="motori" name="motori" required>
+                <option value="benzine">Benzinë 5.5L</option>
+                <option value="diesel">Diesel i6.0l</option>
+                <option value="elektrik">Elektrik 35kw</option>
+                <option value="hibrid">Hibrid</option>
+            </select>
+
+            <button type="submit">Dërgo</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

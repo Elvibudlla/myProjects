@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <script src="https://unpkg.com/react@18.0.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.0.0/umd/react-dom.production.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formë për Blerësin</title>
+    <link rel="stylesheet" href="/components/bleresi/bleresi.js">
+    <script src="/components/bleresi/bleresi.js"> </script>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Formë për Blerësin</h2>
+        <form id="bleresiForm">
+            <label for="emri">Emri:</label>
+            <input type="text" id="emri" name="emri" required>
+
+            <label for="mbiemri">Mbiemri:</label>
+            <input type="text" id="mbiemri" name="mbiemri" required>
+
+            <label for="makina">Makina që ka blerë:</label>
+            <select id="makina" name="makina" required>
+                <option value="" disabled selected>Zgjidh një makinë</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+                <option value="Volkswagen">Volkswagen</option>
+            </select>
+
+            <button type="submit">Dërgo</button>
+        </form>
+    </div>
+</body>
+
+</html>
