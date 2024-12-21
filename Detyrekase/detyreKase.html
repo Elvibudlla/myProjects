@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/tabela.css">
+</head>
+
+<body>
+
+    <form id="form">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="role">Role:</label><br>
+        <input type="text" id="role" name="role"><br><br>
+
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">I agree to the terms and conditions</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="dataTable" border="1" style="margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Role</th>
+                <th>Agreement</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="/JS/tabela.js" defer></script>
+
+</body>
+
+</html>
